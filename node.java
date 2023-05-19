@@ -1,66 +1,31 @@
+import java.util.ArrayList;
+
 public class Node {
     
-    private String ciudad1;
-    private String ciudad2;
-    private int tiempoNormal;
-    private int tiempoLluvia;
-    private int tiempoNieve;
-    private int tiempoTormenta;
+    private String ciudad;
+    private ArrayList<Vector> vectors;
 
-    public Node(String ciudad1, String ciudad2, int tiempoNormal, int tiempoLluvia, int tiempoNieve, int tiempoTormenta) {
-        setCiudad1(ciudad1);
-        setCiudad2(ciudad2);
-        setTiempoNormal(tiempoNormal);
-        setTiempoLluvia(tiempoLluvia);
-        setTiempoNieve(tiempoNieve);
-        setTiempoTormenta(tiempoTormenta);
+    public Node(String ciudad, Vector vector) {
+        setCiudad(ciudad);
+        ArrayList<Vector> arr = new ArrayList<>();
+        arr.add(vector);
+        setVectors(arr);        
     }
 
-    public String getCiudad1() {
-        return ciudad1;
+
+    public String getCiudad() {
+        return ciudad;
     }
 
-    public void setCiudad1(String ciudad1) {
-        this.ciudad1 = ciudad1;
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
-    public String getCiudad2() {
-        return ciudad2;
+    public ArrayList<Vector> getVectors() {
+        return vectors;
     }
 
-    public void setCiudad2(String ciudad2) {
-        this.ciudad2 = ciudad2;
-    }
-
-    public int getTiempoNormal() {
-        return tiempoNormal;
-    }
-
-    public void setTiempoNormal(int tiempoNormal) {
-        this.tiempoNormal = tiempoNormal;
-    }
-
-    public int getTiempoLluvia() {
-        return tiempoLluvia;
-    }
-
-    public void setTiempoLluvia(int tiempoLluvia) {
-        this.tiempoLluvia = tiempoLluvia;
-    }
-
-    public int getTiempoNieve() {
-        return tiempoNieve;
-    }
-
-    public void setTiempoNieve(int tiempoNieve) {
-        this.tiempoNieve = tiempoNieve;
-    }
-
-    public int getTiempoTormenta() {
-        return tiempoTormenta;
-    }
-
-    public void setTiempoTormenta(int tiempoTormenta) {
-        this.tiempoTormenta = tiempoTormenta;
+    public void setVectors(ArrayList<Vector> vectors) {
+        this.vectors = vectors;
     }
 }
