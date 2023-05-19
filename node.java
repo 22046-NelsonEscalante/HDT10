@@ -1,4 +1,4 @@
-public class node {
+public class Node {
     
     private String ciudad1;
     private String ciudad2;
@@ -7,7 +7,7 @@ public class node {
     private int tiempoNieve;
     private int tiempoTormenta;
 
-    public node(String ciudad1, String ciudad2, int tiempoNormal, int tiempoLluvia, int tiempoNieve, int tiempoTormenta) {
+    public Node(String ciudad1, String ciudad2, int tiempoNormal, int tiempoLluvia, int tiempoNieve, int tiempoTormenta) {
         setCiudad1(ciudad1);
         setCiudad2(ciudad2);
         setTiempoNormal(tiempoNormal);
