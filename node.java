@@ -3,13 +3,11 @@ import java.util.ArrayList;
 public class Node {
     
     private String ciudad;
-    private ArrayList<Vector> vectors;
+    private ArrayList<Vector> vectors = new ArrayList<>();
 
     public Node(String ciudad, Vector vector) {
         setCiudad(ciudad);
-        ArrayList<Vector> arr = new ArrayList<>();
-        arr.add(vector);
-        setVectors(arr);        
+        addVector(vector);
     }
 
 
@@ -27,5 +25,9 @@ public class Node {
 
     public void setVectors(ArrayList<Vector> vectors) {
         this.vectors = vectors;
+    }
+
+    public void addVector(Vector vector) {
+        vectors.add(vector);
     }
 }
