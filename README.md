@@ -2,4 +2,6 @@
 
 ## Integrantes
 
-Nelson Escalante - 22046
+- Nelson Escalante - 22046
+
+- Héctor Penedo - 22217
